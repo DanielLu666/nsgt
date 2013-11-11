@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '1.9.3'
 
 gem 'rails', '4.0.0'
 
@@ -18,6 +18,9 @@ group :doc do
   gem 'sdoc', '0.3.20', require: false
 end
 
+group :production do
+  gem 'pg', '0.15.1'
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
